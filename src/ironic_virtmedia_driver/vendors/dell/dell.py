@@ -158,4 +158,20 @@ class DELL(IronicVirtMediaHW):
             self.log.warning('Failed to disable booting options: %s', str(err))
         #For time being lets do the boot order with ipmitool since, well dell doesn't provide open support
         #for this.
-        manager_utils.node_set_boot_device(task, boot_devices.CDROM, persistent=False)
+        try:
+          # 0x00 0x08 0x05 0x80 0x20: chassis|set|bootdev|for next boot only|remote CD
+          # other options for device (per ipmitool's "ipmi_chassis.c"):
+          # 04: PXE
+          # 08: HDD
+          # 0c: Safe
+          # 10: Diag
+          # 14: CDROM
+          # 18: Setup
+          # 1c: Remote FDD
+          # 24: Remote primary media
+          # 2c: Remote HDD
+          # 3c: FDD
+          ipmitool.send_raw(task, '0x00 0x08 0x05 0x80 0x20 0x00 0x00 0x00')
+          self.log.info('Set next boot to remote media')
+        except Exception as err:
+            self.log.warning('Failed to set next boot to remote media: %s', str(err))
