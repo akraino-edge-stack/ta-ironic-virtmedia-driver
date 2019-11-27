@@ -1,4 +1,6 @@
 # Copyright 2019 Nokia
+# Copyright 2019 Cachengo
+# Copyright 2019 ENEA
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,8 +15,3 @@
 # limitations under the License.
 #
 
-from ..openbmc_hw import OpenBMCIronicVirtMediaHW
-
-class NokiaIronicVirtMediaHW(OpenBMCIronicVirtMediaHW):
-    def __init__(self, log):
-        super(NokiaIronicVirtMediaHW, self).__init__(log)
