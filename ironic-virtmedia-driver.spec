@@ -15,7 +15,7 @@
 
 Name:       ironic-virtmedia-driver
 Version:    %{_version}
-Release:    1%{?dist}
+Release:    2%{?dist}
 Summary:    Contains ironic drivers for virtualmedia based deployment
 License:    %{_platform_licence}
 Source0:    %{name}-%{version}.tar.gz
