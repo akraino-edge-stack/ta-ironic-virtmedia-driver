@@ -25,6 +25,98 @@
     },
     {
       "key": {
+        "uuid": "c45e4b08_123f20de",
+        "filename": "src/ironic_virtmedia_driver/vendors/ampere/ampere.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 43
+      },
+      "writtenOn": "2019-12-07T15:11:38Z",
+      "side": 1,
+      "message": "bcm -\u003e bmc (or, perhaps BMC since it\u0027s an acronym)",
+      "range": {
+        "startLine": 60,
+        "startChar": 50,
+        "endLine": 60,
+        "endChar": 53
+      },
+      "revId": "62750a6bec1b578407f0cb68333c9492668b2f4c",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f87ee1e_dfa67d9a",
+        "filename": "src/ironic_virtmedia_driver/vendors/ampere/falcon.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 43
+      },
+      "writtenOn": "2019-12-07T15:11:38Z",
+      "side": 1,
+      "message": "I\u0027d suggest extracting all the hex strings (here and below) into constants at the top of the file so that they\u0027re all in one place and have human readable names.",
+      "range": {
+        "startLine": 33,
+        "startChar": 48,
+        "endLine": 33,
+        "endChar": 77
+      },
+      "revId": "62750a6bec1b578407f0cb68333c9492668b2f4c",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "de56a8a3_ca4073ec",
+        "filename": "src/ironic_virtmedia_driver/vendors/ampere/falcon.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 43
+      },
+      "writtenOn": "2019-12-07T15:11:38Z",
+      "side": 1,
+      "message": "Thanks for this comment, but I don\u0027t know what document it\u0027s referencing. Could you include that info too?",
+      "range": {
+        "startLine": 68,
+        "startChar": 10,
+        "endLine": 68,
+        "endChar": 31
+      },
+      "revId": "62750a6bec1b578407f0cb68333c9492668b2f4c",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c218299d_541962d2",
+        "filename": "src/ironic_virtmedia_driver/vendors/ampere/falcon.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 43
+      },
+      "writtenOn": "2019-12-07T15:11:38Z",
+      "side": 1,
+      "message": "Is RIS a well known acronym? I\u0027m not familiar with it. A docstring for this function would be appreciated.",
+      "range": {
+        "startLine": 131,
+        "startChar": 17,
+        "endLine": 131,
+        "endChar": 20
+      },
+      "revId": "62750a6bec1b578407f0cb68333c9492668b2f4c",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "aa4619a4_4a18e115",
         "filename": "src/ironic_virtmedia_driver/vendors/ampere/falcon.py",
         "patchSetId": 1
