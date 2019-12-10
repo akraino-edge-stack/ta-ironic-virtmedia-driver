@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "c3d9042c_6578d971",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 251
+      },
+      "writtenOn": "2019-12-10T16:49:47Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "d416267a_c44a1a14",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 8
+      },
+      "revId": "62750a6bec1b578407f0cb68333c9492668b2f4c",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c45e4b08_123f20de",
         "filename": "src/ironic_virtmedia_driver/vendors/ampere/ampere.py",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2019-12-07T15:11:38Z",
       "side": 1,
       "message": "bcm -\u003e bmc (or, perhaps BMC since it\u0027s an acronym)",
+      "range": {
+        "startLine": 60,
+        "startChar": 50,
+        "endLine": 60,
+        "endChar": 53
+      },
+      "revId": "62750a6bec1b578407f0cb68333c9492668b2f4c",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "932c93af_487d5a59",
+        "filename": "src/ironic_virtmedia_driver/vendors/ampere/ampere.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 251
+      },
+      "writtenOn": "2019-12-10T16:49:47Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "c45e4b08_123f20de",
       "range": {
         "startLine": 60,
         "startChar": 50,
@@ -94,6 +142,30 @@
     },
     {
       "key": {
+        "uuid": "d7f4b158_183b1a83",
+        "filename": "src/ironic_virtmedia_driver/vendors/ampere/falcon.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 251
+      },
+      "writtenOn": "2019-12-10T16:49:47Z",
+      "side": 1,
+      "message": "Actually I don\u0027t have that info. I\u0027ll remove the comment.\nThis patch taken from cachengo:\nhttps://github.com/cachengo/rec-ironic-virtmedia-driver/commit/93914879ccf6cb554707e8bcb27fcb9f42d23924\nBut the source is from vendors/nokia/nokia_hw.py.\nThis comment comes from the Nokia file it seems.",
+      "parentUuid": "de56a8a3_ca4073ec",
+      "range": {
+        "startLine": 68,
+        "startChar": 10,
+        "endLine": 68,
+        "endChar": 31
+      },
+      "revId": "62750a6bec1b578407f0cb68333c9492668b2f4c",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c218299d_541962d2",
         "filename": "src/ironic_virtmedia_driver/vendors/ampere/falcon.py",
         "patchSetId": 1
@@ -105,6 +177,30 @@
       "writtenOn": "2019-12-07T15:11:38Z",
       "side": 1,
       "message": "Is RIS a well known acronym? I\u0027m not familiar with it. A docstring for this function would be appreciated.",
+      "range": {
+        "startLine": 131,
+        "startChar": 17,
+        "endLine": 131,
+        "endChar": 20
+      },
+      "revId": "62750a6bec1b578407f0cb68333c9492668b2f4c",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "efecb2c2_37fd2b37",
+        "filename": "src/ironic_virtmedia_driver/vendors/ampere/falcon.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 251
+      },
+      "writtenOn": "2019-12-10T16:49:47Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "c218299d_541962d2",
       "range": {
         "startLine": 131,
         "startChar": 17,
@@ -137,6 +233,30 @@
       "revId": "62750a6bec1b578407f0cb68333c9492668b2f4c",
       "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6d95077a_bc4113a5",
+        "filename": "src/ironic_virtmedia_driver/vendors/ampere/falcon.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 390,
+      "author": {
+        "id": 251
+      },
+      "writtenOn": "2019-12-10T16:49:47Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "aa4619a4_4a18e115",
+      "range": {
+        "startLine": 390,
+        "startChar": 8,
+        "endLine": 390,
+        "endChar": 9
+      },
+      "revId": "62750a6bec1b578407f0cb68333c9492668b2f4c",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
     }
   ]
 }
