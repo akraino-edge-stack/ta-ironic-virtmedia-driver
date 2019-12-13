@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "32178695_792b1779",
+        "filename": "src/ironic_virtmedia_driver/vendors/ampere/falcon.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 137
+      },
+      "writtenOn": "2019-12-13T11:22:46Z",
+      "side": 1,
+      "message": "typo",
+      "range": {
+        "startLine": 30,
+        "startChar": 2,
+        "endLine": 30,
+        "endChar": 8
+      },
+      "revId": "098b482d64cacd903459dfdac6aafd400f9ca7bf",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e34c9aa5_226f63b3",
+        "filename": "src/ironic_virtmedia_driver/vendors/ampere/falcon.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 382,
+      "author": {
+        "id": 137
+      },
+      "writtenOn": "2019-12-13T11:22:46Z",
+      "side": 1,
+      "message": "space",
+      "range": {
+        "startLine": 382,
+        "startChar": 9,
+        "endLine": 382,
+        "endChar": 14
+      },
+      "revId": "098b482d64cacd903459dfdac6aafd400f9ca7bf",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": true
+    }
+  ]
+}
