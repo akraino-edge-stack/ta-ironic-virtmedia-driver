@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "155914be_e89b6862",
+        "filename": "src/ironic_virtmedia_driver/vendors/ampere/ampere.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 186
+      },
+      "writtenOn": "2019-12-16T14:11:00Z",
+      "side": 1,
+      "message": "The whole file seems like a copy of src/ironic_virtmedia_driver/vendors/nokia/nokia_hw.py where the `hex_convert` method changed. You should use inheritance either by directly from NokiaIronicVirtMediaHW or make NokiaIronicVirtMediaHW into a generic class and use that in both places.",
+      "revId": "c0e2d0c8aa9ef3c1114ebb79a734d43edc0530c5",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": true
+    }
+  ]
+}
