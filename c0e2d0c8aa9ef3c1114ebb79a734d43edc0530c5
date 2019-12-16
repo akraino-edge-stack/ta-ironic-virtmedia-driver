@@ -34,6 +34,24 @@
       "revId": "c0e2d0c8aa9ef3c1114ebb79a734d43edc0530c5",
       "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "769fd09e_3e8d57b2",
+        "filename": "src/ironic_virtmedia_driver/vendors/ampere/ampere.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 251
+      },
+      "writtenOn": "2019-12-16T14:21:17Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "7982c321_c7c8666a",
+      "revId": "c0e2d0c8aa9ef3c1114ebb79a734d43edc0530c5",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
     }
   ]
 }
