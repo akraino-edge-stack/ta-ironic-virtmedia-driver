@@ -40,7 +40,7 @@ RAW_RESTART_VMEDIA =    '0x32 0xcb 0x0a 0x01'
 
 # Remote Image Service commands
 RAW_RESTART_RIS_CD =   '0x32 0x9f 0x01 0x0b 0x01'
-RAW_SET_RIS_NFS =      '0x32 0x9f 0x01 0x05 0x00 0x6e 0x66 0x73'
+RAW_SET_RIS_NFS =      '0x32 0x9f 0x01 0x05 0x00 0x6e 0x66 0x73 0x00 0x00 0x00'
 RAW_SET_RIS_NFS_IP =   '0x32 0x9f 0x01 0x02 0x00 %s'
 RAW_SET_RIS_NFS_PATH = '0x32 0x9f 0x01 0x01 0x01 %s'
 RAW_SET_RIS_PROGRESS = '0x32 0x9f 0x01 0x01 0x00 %s'
@@ -50,7 +50,6 @@ RAW_RESTART_RIS =      '0x32 0x9f 0x08 0x0b'
 RAW_GET_MOUNTED_IMG_COUNT = '0x32 0xd8 0x00 0x01'
 RAW_SET_IMG_NAME =  '0x32 0xd7 0x01 0x01 0x01 0x01 %s'
 RAW_STOP_REDIRECT = '0x32 0xd7 0x01 0x01 0x01 0x00 %s'
-
 
 class FALCON(OpenBMCIronicVirtMediaHW):
     def __init__(self, log):
@@ -200,7 +199,7 @@ class FALCON(OpenBMCIronicVirtMediaHW):
 
     def _set_nfs_server_ip(self, driver_info, task):
         try:
-            cmd = RAW_SET_RIS_NFS_IP % (self.hex_convert(driver_info['provisioning_server']))
+            cmd = RAW_SET_RIS_NFS_IP % (self.hex_convert(driver_info['provisioning_server'], True, 64))
             self.log.debug('Virtual media server "%s"' % driver_info['provisioning_server'])
             ipmitool.send_raw(task, cmd)
         except Exception as err:
@@ -231,7 +230,7 @@ class FALCON(OpenBMCIronicVirtMediaHW):
             ipmitool.send_raw(task, cmd)
             time.sleep(2)
 
-            cmd = RAW_SET_RIS_NFS_PATH % (self.hex_convert(self.remote_share))
+            cmd = RAW_SET_RIS_NFS_PATH % (self.hex_convert(self.remote_share, True, 64))
             ipmitool.send_raw(task, cmd)
             time.sleep(2)
 
@@ -306,7 +305,7 @@ class FALCON(OpenBMCIronicVirtMediaHW):
 
     def _set_image_name(self, image_filename, task):
         try:
-            cmd = RAW_SET_IMG_NAME % (self.hex_convert(image_filename))
+            cmd = RAW_SET_IMG_NAME % (self.hex_convert(image_filename, True, 64))
             self.log.debug('Setting virtual media image: %s' % image_filename)
             ipmitool.send_raw(task, cmd)
         except Exception as err:
